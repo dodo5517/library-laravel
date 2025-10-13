@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fdfaf4; /* 아늑한 베이지 톤 배경 */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #f4ede0; /* 따뜻한 베이지 톤 */
+    padding: 20px 40px;
+    border-bottom: 2px solid #d1c7b7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6b8e23; /* 올리브 그린 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+header .logo a:hover {
+    color: #556b2f; /* 호버 시 색상 변경 */
+}
+
+header .menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #5a5a5a;
+    transition: color 0.3s;
+}
+
+header .menu a:hover {
+    color: #6b8e23;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 10px; /* 요소들 간 간격 */
+}
+
+.search-option {
+    padding: 12px 20px;
+    border: 2px solid #d1c7b7;
+    border-radius: 50px 0 0 50px;
+    font-size: 16px;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-option:focus {
+    border-color: #6b8e23;
+    box-shadow: 0 0 10px rgba(107, 142, 35, 0.2);
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 12px 20px;
+    border: 2px solid #d1c7b7;
+    border-radius: 0 50px 50px 0;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #6b8e23;
+    box-shadow: 0 0 10px rgba(107, 142, 35, 0.2);
+}
+
+.search-bar button {
+    margin-left: 15px;
+    padding: 11px 20px;
+    border: none;
+    background: #6b8e23;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background: #556b2f;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    margin: 20px auto;
+    width: 70%;
+    height: 480px;
+    background: #fff;
+    border-radius: 20px;
+    border: 2px solid #d1c7b7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px; /* 기존 카로셀의 둥근 테두리 유지 */
+}
+
+.carousel button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel .prev {
+    left: 20px;
+}
+
+.carousel .next {
+    right: 20px;
+}
+
+/* Popular Books Section */
+.popular-books {
+    max-width: 90%;
+    margin: 90px auto;
+}
+
+.popular-books h2 {
+    text-align: center;
+    margin: 0 0 30px;
+    font-size: 32px;
+    color: #6b8e23;
+    font-weight: bold;
+    border-bottom: 2px solid #d1c7b7;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.book {
+    background: white;
+    border-radius: 12px;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #d1c7b7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.book img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #d1c7b7;
+}
+
+.book-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.book-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.book-info p.title {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.book-info p strong {
+    color: #6b8e23;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book img {
+        height: 200px;
+    }
+
+    .book-info p.title {
+        font-size: 16px;
+    }
+
+    .book-info p {
+        font-size: 13px;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f4ede0;
+    color: #666;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 2px solid #d1c7b7;
+}

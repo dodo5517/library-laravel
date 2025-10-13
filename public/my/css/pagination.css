@@ -1,0 +1,83 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none; /* 기본 점 스타일 제거 */
+}
+
+.pagination-sm {
+    font-size: 0.75rem; /* 폰트 크기를 더 작게 설정 */
+}
+
+.page-item {
+    margin: 0 2px;
+}
+
+.page-link {
+    display: inline-flex; /* 균일한 크기 조정을 위해 flex 사용 */
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px; /* 내부 여백 축소 */
+    color: #666 !important; /* 기본 텍스트 색상 */
+    background-color: #fdfaf4 !important; /* 따뜻한 베이지 배경 */
+    border: 1px solid #d1c7b7 !important; /* 부드러운 테두리 */
+    border-radius: 3px; /* 더 작은 둥근 모서리 */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 28px; /* 버튼 높이 축소 */
+    width: 28px; /* 버튼 너비 축소 */
+    text-align: center;
+    font-size: 0.75rem; /* 텍스트 크기 축소 */
+}
+
+.page-link:hover {
+    background-color: #6b8e23 !important; /* 올리브 그린 호버 색상 */
+    color: white !important;
+}
+
+.page-item.active .page-link {
+    background-color: #6b8e23 !important; /* 활성화된 버튼 배경 */
+    color: white !important;
+    pointer-events: none;
+}
+
+.page-item .page-link:focus {
+    outline: none;
+    box-shadow: 0 0 3px 1px rgba(107, 142, 35, 0.4); /* 더 작고 미세한 포커스 효과 */
+}
+
+/* 화살표 스타일 */
+.page-item .page-link[aria-label="First"],
+.page-item .page-link[aria-label="Previous"],
+.page-item .page-link[aria-label="Next"],
+.page-item .page-link[aria-label="Last"] {
+    font-size: 0.9rem; /* 화살표 크기 줄이기 */
+    color: #6b8e23 !important; /* 기본 올리브 그린 */
+    height: 28px; /* 화살표 버튼 높이 축소 */
+    width: 28px; /* 화살표 버튼 너비 축소 */
+}
+
+.page-item .page-link[aria-label="First"]:hover span,
+.page-item .page-link[aria-label="Last"]:hover span,
+.page-item .page-link[aria-label="Previous"]:hover span,
+.page-item .page-link[aria-label="Next"]:hover span {
+    color: white !important;
+}
+
+.page-item .page-link[aria-label="First"] span,
+.page-item .page-link[aria-label="Last"] span {
+    font-size: 0.9rem;
+    color: #6b8e23 !important; /* 기본 올리브 그린 */
+}
+
+.page-item .page-link[aria-label="Previous"] span,
+.page-item .page-link[aria-label="Next"] span {
+    font-size: 0.9rem;
+    color: #6b8e23 !important; /* 기본 올리브 그린 */
+}
+
+.page-item .page-link[aria-label="Previous"]:hover span,
+.page-item .page-link[aria-label="Next"]:hover span {
+    color: white !important; /* 호버 시 흰색 */
+}

@@ -1,0 +1,54 @@
+.text-gray-800 {
+  color: #5a5c69 !important;
+}
+
+.text-primary {
+  color: #4e73df !important;
+}
+
+.detail table {
+  margin-top: 15px;
+}
+
+.detail table th {
+  background-color: #f8f9fc;
+  color: #5a5c69;
+  font-weight: 600;
+  width: 30%;
+}
+
+.detail table td {
+  color: #858796;
+}
+
+.cardButtonDiv {
+  display: flex;
+  justify-content: center; 
+  gap: 10px;
+}
+
+
+.editInput input {
+  border: none;
+  outline: none;
+  background-color: transparent; /* 배경을 투명하게 */
+  border-bottom: 2px solid #ccc; /* 하단만 테두리 추가 */
+  padding: 10px 0;
+}
+
+.editInput input:focus {
+  border-bottom: 2px solid #007bff; /* 포커스 시 하단 테두리 색상 변경 */
+}
+.editInput textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 300px; /* 최소 너비를 설정할 수도 있음 */
+  height: 300px; /* 높이 설정 */
+  resize: both;
+}
+.summary {
+  white-space: pre-wrap; 
+  max-height: 250px;
+  overflow-y: auto;
+  display: block;
+}

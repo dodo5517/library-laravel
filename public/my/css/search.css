@@ -1,0 +1,80 @@
+.search-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-select {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: 1px solid #4e73df; /* 강조된 테두리 색상 */
+    border-radius: 5px;
+    background-color: #fff; /* 흰색 배경 유지 */
+    font-size: 14px;
+    color: #495057;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-select:focus {
+    border-color: #2e59d9; /* 포커스 시 더 진한 파란색 */
+    box-shadow: 0 0 0 0.2rem rgba(46, 89, 217, 0.25);
+}
+
+.search-input {
+    padding: 10px 15px;
+    width: 250px;
+    border: 1px solid #4e73df; /* 강조된 테두리 색상 */
+    border-radius: 5px;
+    font-size: 14px;
+    color: #495057;
+    outline: none;
+    background-color: #fff; /* 흰색 배경 유지 */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+    border-color: #2e59d9; /* 포커스 시 더 진한 파란색 */
+    box-shadow: 0 0 0 0.2rem rgba(46, 89, 217, 0.25);
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4e73df; /* 버튼 배경색 */
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-button:hover {
+    background-color: #2e59d9; /* 버튼 hover 시 어두운 파란색 */
+    box-shadow: 0 0 0 0.2rem rgba(46, 89, 217, 0.25);
+}
+
+.search-button:focus {
+    outline: none; /* 포커스 시 아웃라인 제거 */
+    box-shadow: 0 0 0 0.2rem rgba(46, 89, 217, 0.25); /* 포커스 시 그림자 효과 */
+}
+
+.search-label {
+    padding: 10px 15px; /* 내부 여백 */
+    background-color: #f1f3f4; /* 배경색 */
+    color: #495057; /* 텍스트 색상 */
+    font-size: 14px; /* 폰트 크기 */
+    border: 1px solid #4e73df; /* 테두리 색상 */
+    border-radius: 5px 0 0 5px; /* 왼쪽만 둥글게 */
+    display: flex; /* 검색란과 동일 높이를 유지하기 위해 flex */
+    align-items: center; /* 텍스트 가운데 정렬 */
+}
