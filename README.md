@@ -1,64 +1,129 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 도서관 웹사이트 (Laravel)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> **기간:** 2024.11.18 ~ 2024.12.19  
+> **개인 프로젝트**  
+> 사용자가 온라인으로 도서 대출 예약을 신청하고, 도서 정보를 검색하여 확인할 수 있는 **도서관 관리 웹사이트**입니다.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Ⅰ 프로젝트 개요
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+이 프로젝트는 **Laravel PHP Framework**를 활용하여 개발된 웹 기반 도서관 시스템으로,  
+도서 검색, 대출, 반납, 예약 등 기본적인 도서관 서비스 기능을 웹 환경에서 제공하는 것을 목표로 했습니다.  
+관리자는 도서와 회원, 대출 요청을 효율적으로 관리할 수 있으며,  
+사용자는 도서 검색부터 예약까지 온라인으로 간편하게 이용할 수 있습니다.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **운영 체제:** Linux  
+- **개발 도구:** PHP (Laravel), phpMyAdmin, Bootstrap, VSCode  
+- **데이터베이스:** MariaDB  
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Ⅱ 개발 목적
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **사용자 편의성 향상:** 오프라인 방문 없이 도서 검색 및 대출 예약 가능  
+- **관리 효율성 강화:** 도서, 회원, 카테고리, 대출 요청을 한눈에 관리할 수 있는 백오피스 구축  
+- **Laravel 기반의 MVC 구조 이해 및 실무 감각 향상**  
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Ⅲ 주요 기능
 
-### Premium Partners
+###  사용자(User)
+- 회원 로그인 / 로그아웃  
+- 도서 검색 및 상세정보 조회  
+- 도서 찜 기능 (즐겨찾기)  
+- 도서 대출 예약 신청  
+- 나의 예약 / 대출 내역 확인  
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+###  관리자(Admin)
+- 도서 등록 / 수정 / 삭제  
+- 사용자 관리 (회원 정보, 권한 관리)  
+- 대출 요청 승인 / 반납 처리  
+- 카테고리 관리 (장르, 주제 등)  
+- 전체 대출 현황 및 통계 조회  
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Ⅳ 기술 스택
 
-## Code of Conduct
+| 구분 | 사용 기술 |
+|------|------------|
+| **Framework** | Laravel 10 (PHP 8.x) |
+| **Frontend** | Bootstrap 5, Blade Template |
+| **Backend** | PHP, Laravel Routing / Controller / Eloquent ORM |
+| **Database** | MariaDB |
+| **Tool** | phpMyAdmin, VSCode |
+| **OS** | Linux |
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## Ⅴ 프로젝트 구조
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+/library  
+├── app/  
+│ ├── Http/  
+│ │ ├── Controllers/  
+│ │ │ ├── BookController.php  
+│ │ │ ├── UserController.php  
+│ │ │ ├── AdminController.php  
+│ │ │ └── BorrowController.php  
+│ ├── Models/  
+│ │ ├── Book.php  
+│ │ ├── User.php  
+│ │ ├── Borrow.php  
+│ │ └── Category.php  
+│ └── Providers/  
+│  
+├── resources/  
+│ ├── views/  
+│ │ ├── books/  
+│ │ ├── admin/  
+│ │ └── auth/  
+│ └── css/  
+│  
+├── routes/  
+│ └── web.php  
+│  
+├── database/  
+│ ├── migrations/  
+│ ├── seeders/  
+│ └── factories/  
+│  
+├── public/  
+│ ├── css/  
+│ ├── js/  
+│ └── images/  
+└── composer.json  
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Ⅵ 실행 방법
+
+```bash
+# 1. 프로젝트 클론
+git clone https://github.com/yourusername/library-laravel.git
+cd library-laravel
+
+# 2. 의존성 설치
+composer install
+
+# 3. 환경 설정 파일 복사
+cp .env.example .env
+
+# 4. .env 파일 수정
+# 자신의 데이터베이스 환경에 맞게 설정해야 합니다.
+# (phpMyAdmin 또는 MariaDB 설정에 따라 다를 수 있습니다.)
+nano .env
+
+# 5. 애플리케이션 키 생성
+php artisan key:generate
+
+# 6. 데이터베이스 마이그레이션 및 시더 실행
+php artisan migrate --seed
+
+# 7. 서버 실행
+php artisan serve
+```
+## Ⅶ 화면 미리보기
+
