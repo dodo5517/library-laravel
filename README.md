@@ -6,6 +6,26 @@
 
 ---
 
+## 화면 미리보기
+
+### 메인
+<table>
+  <tr>
+    <td><img width="500" src="https://github.com/user-attachments/assets/2ff943d5-94ac-4626-b6bb-45f709b2de50" /></td>
+    <td><img width="500"src="https://github.com/user-attachments/assets/963623db-63ba-48bd-8f64-386b4c15838c" /></td>
+  </tr>
+</table>
+
+### 관리자
+<table>
+  <tr>
+    <td><img width="500"src="https://github.com/user-attachments/assets/c6b954d1-813b-4569-b2c8-86346da3410d" /></td>
+    <td><img width="500" src="https://github.com/user-attachments/assets/26cc8136-1970-47fb-a5b6-27bdbeabf3b1" /></td>
+  </tr>
+</table>
+
+---
+
 ## Ⅰ 프로젝트 개요
 
 이 프로젝트는 **Laravel PHP Framework**를 활용하여 개발된 웹 기반 도서관 시스템으로,  
@@ -125,5 +145,4 @@ php artisan migrate --seed
 # 7. 서버 실행
 php artisan serve
 ```
-## Ⅶ 화면 미리보기
 
