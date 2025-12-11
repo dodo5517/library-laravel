@@ -26,6 +26,12 @@
 
 ---
 
+## 데모
+
+[데모 바로가기](https://library.kimdohyeon.dev/)
+
+---
+
 ## Ⅰ 프로젝트 개요
 
 이 프로젝트는 **Laravel PHP Framework**를 활용하여 개발된 웹 기반 도서관 시스템으로,  
